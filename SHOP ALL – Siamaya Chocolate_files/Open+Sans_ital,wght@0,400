@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'Open SansOmnisend';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.soundestlink.com/fonts/static/aHR0cHM6Ly9mb250cy5nc3RhdGljLmNvbS9zL29wZW5zYW5zL3Y0My9tZW1RWWFHczEyNk1pWnBCQS1VRlVJY1ZYU0NFa3gyY21xdlhsV3E4dFdaMFB3ODZoZDBSazhaa2FWUS53b2Zm) format('woff');
+}
+@font-face {
+  font-family: 'Open SansOmnisend';
+  font-style: italic;
+  font-weight: 700;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.soundestlink.com/fonts/static/aHR0cHM6Ly9mb250cy5nc3RhdGljLmNvbS9zL29wZW5zYW5zL3Y0My9tZW1RWWFHczEyNk1pWnBCQS1VRlVJY1ZYU0NFa3gyY21xdlhsV3E4dFdaMFB3ODZoZDBSa3lGamFWUS53b2Zm) format('woff');
+}
+@font-face {
+  font-family: 'Open SansOmnisend';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.soundestlink.com/fonts/static/aHR0cHM6Ly9mb250cy5nc3RhdGljLmNvbS9zL29wZW5zYW5zL3Y0My9tZW1TWWFHczEyNk1pWnBCQS1VdldiWDJ2Vm5YQmJPYmoyT1ZaeU9PU3I0ZFZKV1Vnc2paMEM0ay53b2Zm) format('woff');
+}
+@font-face {
+  font-family: 'Open SansOmnisend';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.soundestlink.com/fonts/static/aHR0cHM6Ly9mb250cy5nc3RhdGljLmNvbS9zL29wZW5zYW5zL3Y0My9tZW1TWWFHczEyNk1pWnBCQS1VdldiWDJ2Vm5YQmJPYmoyT1ZaeU9PU3I0ZFZKV1Vnc2ctMXk0ay53b2Zm) format('woff');
+}
