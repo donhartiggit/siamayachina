@@ -21,12 +21,12 @@
         }
 
         /* Header Styles */
-        header {
-            height: 400px;
-            background-image: url('KhaoSoiBanner.jpg'); /* Replace with your image path */
+        <!--header {
+            height: 647px;
+            background-image: url('YingJi纪英超_CARD.png'); /* Replace with your image path */
             background-size: cover;
             background-position: center;
-            display: flex;
+            display:flex;
             align-items: center;
             justify-content: center;
             color: white;
@@ -36,15 +36,15 @@
 
         header h1 {
             font-size: 2.5rem;
-        }
+        }-->
 
         /* Product Grid Styles */
         .product-grid {
             display: grid;
-            grid-template-columns: repeat(4, 1fr); /* 4 columns on desktop */
+            grid-template-columns: repeat(6, 1fr); /* 4 columns on desktop */
             gap: 20px;
             padding: 20px;
-            max-width: 1200px;
+            max-width: auto;
             margin: 0 auto;
         }
 
@@ -58,7 +58,7 @@
 
         .product-card img {
             width: 100%;
-            height: 600px;
+            height: 500px;
             object-fit: fill; /* Ensures image fits nicely */
             margin:2px;
         }
@@ -69,10 +69,11 @@
 
         .product-info h2 {
             font-size: 1.5rem;
-            margin-bottom: 10px;
+            margin-bottom: 0px;
         }
 
         .product-info p {
+            display:none;
             font-size: 1.2rem;
             color: #333;
         }
@@ -149,63 +150,57 @@
 </head>
 <body>
     <!-- Header -->
-    <header>
-        <h1>Our Products</h1>
-    </header>
+   
+        <div><center><img src="YingJi纪英超_CARD.png"></center>
+    
 
     <!-- Product Grid -->
     <section class="product-grid">
         <!-- Product 1 -->
         <article class="product-card">
-            <img src="CCURRY.jpg" alt="Product 1"> <!-- Replace with your image path -->
+            <img src="CoconutMilkDarkChocolate.webp" alt="Siamaya 椰奶黑巧克力"> <!-- Replace with your image path -->
             <div class="product-info">
-                <h2>Product 1</h2>
-                <p>$19.99</p>
+                <h2>椰奶黑巧克力</h2>
             </div>
         </article>
 
         <!-- Product 2 -->
         <article class="product-card">
-            <img src="CCURRY.jpg" alt="Product 2"> <!-- Replace with your image path -->
+            <img src="BananaCrunchMilkChocolate.webp" alt="Siamaya 香蕉脆片牛奶巧克力"> <!-- Replace with your image path -->
             <div class="product-info">
-                <h2>Product 2</h2>
-                <p>$29.99</p>
+                <h2>香蕉脆片牛奶巧克力</h2>                
             </div>
         </article>
 
         <!-- Product 3 -->
         <article class="product-card">
-            <img src="SignatureDark85Percent.webp" alt="黑85%"> <!-- Replace with your image path -->
+            <img src="CoffeeCrunchMilkChocolate.webp" alt="Siamaya 咖啡脆牛奶巧克力"> <!-- Replace with your image path -->
             <div class="product-info">
-                <h2>黑85%</h2>
-                <p>$39.99</p>
+                <h2>咖啡脆牛奶巧克力</h2>
             </div>
         </article>
 
         <!-- Product 4 -->
         <article class="product-card">
-            <img src="BORDER_85PercentSimplyCacaoChocolateMilk.webp" alt="85%只可可巧克力和奶"> <!-- Replace with your image path -->
+            <img src="DurianMilkChocolate.webp" alt="Siamaya 榴莲牛奶巧克力"> <!-- Replace with your image path -->
             <div class="product-info">
-                <h2>85%只可可巧克力和奶</h2>
-                <p>$39.99</p>
+                <h2>榴莲牛奶巧克力</h2>
             </div>
         </article>
 
         <!-- Product 5 (Added to demonstrate 4-column layout) -->
         <article class="product-card">
-            <img src="/SHOP ALL – Siamaya Chocolate_files/CCURRY.jpg" alt="Product 5"> <!-- Replace with your image path -->
+            <img src="ThaiTeaMilkChocolate.webp" alt="Siamaya 泰式奶茶牛奶巧克力"> <!-- Replace with your image path -->
             <div class="product-info">
-                <h2>Product 5</h2>
-                <p>$49.99</p>
+                <h2>泰式奶茶牛奶巧克力</h2>                
             </div>
         </article>
 
         <!-- Product 4 -->
         <article class="product-card">
-            <img src="/SHOP ALL – Siamaya Chocolate_files/CCURRY.jpg" alt="Product 4"> <!-- Replace with your image path -->
+            <img src="HillCoffeeAndPomelo.webp" alt=" Siamaya 咖啡&柚子黑黑巧克力"> <!-- Replace with your image path -->
             <div class="product-info">
-                <h2>Product 4</h2>
-                <p>$39.99</p>
+                <h2>咖啡&柚子黑黑巧克力</h2>                
             </div>
         </article>
 
@@ -303,25 +298,26 @@
     <!-- Footer -->
     <footer>
         <div class="footer-content">
-            <h3>Contact Us</h3>
+            <h3>咨询</h3>
             <div class="contact-details">
                 <div class="contact-item">
-                    <p>Email: <a href="mailto:info@siamayachocolate.com">ying@siamayachchina.com</a></p>
+                    <p>邮件: <a href="mailto:info@siamayachocolate.com">ying@siamayachchina.com</a></p>
                 </div>
                 <div class="contact-item">
-                    <p>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+                    <p>电话: <a href="tel:+1234567890">(+86)158 023 40874</a></p>
                 </div>
                 <div class="contact-item">
-                    <p>Address: 123 Chocolate Lane, Sweet City, SC 12345</p>
+                    <p>地址：浙江</p>
                 </div>
                 <div class="contact-item">
-                    <p>Follow us: 
-                        <a href="https://twitter.com/siamayachoco" target="_blank">Twitter</a> | 
-                        <a href="https://instagram.com/siamayachocolate" target="_blank">Instagram</a>
+                    <p>社交: 
+                        <a href="https://twitter.com/siamayachoco" target="_blank">小红书</a> | 
+                        <a href="https://instagram.com/siamayachocolate" target="_blank">微信</a>
                     </p>
                 </div>
             </div>
         </div>
     </footer>
+    </div>
 </body>
 </html>
