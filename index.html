@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siamaya巧克力-中国官方独家经销商</title>
+    <link rel="icon" type="image/x-icon" href="/siamaya_favicon.png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            min-height: 100vh;
+            display: grid;
+            grid-template-rows: 400px auto auto; /* Header, main content, footer */
+            gap: 20px;
+        }
+
+        /* Header Styles */
+        .headerimage {
+            min-width:95%;
+            max-width:100%; 
+            height:auto;
+        }
+        
+        <!--header {
+            height: 647px;
+            background-image: url('YingJi纪英超_CARD.png'); /* Replace with your image path */
+            background-size: cover;
+            background-position: center;
+            display:flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+        }-->
+
+        /* Product Grid Styles */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr); /* 4 columns on desktop */
+            gap: 20px;
+            padding: 20px;
+            max-width: auto;
+            margin: 0 auto;
+        }
+
+        .product-card {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 0px;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 500px;
+            object-fit: fill; /* Ensures image fits nicely */
+        }
+
+        .product-info {
+            padding: 15px;
+        }
+
+        .product-info h2 {
+            font-size: 1.5rem;
+            margin-bottom: 0px;
+        }
+
+        .product-info p {
+            display:none;
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        /* Footer Styles */
+        footer {
+            background: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            width: 100%; /* Ensure footer spans full width */
+            margin: 0; /* Remove any default margins */
+        }
+
+        .footer-content {
+            max-width: 1200px; /* Match product grid's max-width */
+            margin: 0 auto; /* Center content */
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+
+        footer h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        footer p, footer a {
+            font-size: 1rem;
+            color: #ddd;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+
+        .contact-details {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .contact-item {
+            margin: 5px 0;
+        }
+
+        /* Responsive Design for Mobile */
+        @media (max-width: 767px) {
+            .product-grid {
+                grid-template-columns: 1fr; /* 1 column on mobile */
+            }
+
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            footer h3 {
+                font-size: 1.3rem;
+            }
+
+            footer p, footer a {
+                font-size: 0.9rem;
+            }
+
+            .contact-details {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+   
+        <div><center><img class="headerimage" src="YingJi纪英超_CARD.PNG"></center>
+    
+
+    <!-- Product Grid -->
+    <section class="product-grid">
+        
+        <!-- Product 1 -->
+        <article class="product-card">
+            <img src="CoconutMilkDarkChocolate.webp" alt="Siamaya 椰奶黑巧克力">
+            <div class="product-info">
+                <h2>椰奶黑巧克力</h2>
+            </div>
+        </article>
+
+        <!-- Product 2 -->
+        <article class="product-card">
+            <img src="BananaCrunchMilkChocolate.webp" alt="Siamaya 香蕉脆片牛奶巧克力">
+            <div class="product-info">
+                <h2>香蕉脆片牛奶巧克力</h2>                
+            </div>
+        </article>
+
+        <!-- Product 3 -->
+        <article class="product-card">
+            <img src="CoffeeCrunchMilkChocolate.webp" alt="Siamaya 咖啡脆牛奶巧克力">
+            <div class="product-info">
+                <h2>咖啡脆牛奶巧克力</h2>
+            </div>
+        </article>
+
+        <!-- Product 4 -->
+        <article class="product-card">
+            <img src="DurianMilkChocolate.webp" alt="Siamaya 榴莲牛奶巧克力">
+            <div class="product-info">
+                <h2>榴莲牛奶巧克力</h2>
+            </div>
+        </article>
+
+        <!-- Product 5 -->
+        <article class="product-card">
+            <img src="ThaiTeaMilkChocolate.webp" alt="Siamaya 泰式奶茶牛奶巧克力">
+            <div class="product-info">
+                <h2>泰式奶茶牛奶巧克力</h2>                
+            </div>
+        </article>
+
+        <!-- Product 6 -->
+        <article class="product-card">
+            <img src="HillCoffeeAndPomelo.webp" alt=" Siamaya 咖啡&柚子黑黑巧克力">
+            <div class="product-info">
+                <h2>咖啡&柚子黑黑巧克力</h2>                
+            </div>
+        </article>
+
+        <!-- Product 7 -->
+        <article class="product-card">
+            <img src="SignatureDark85Percent.webp" alt="85%黑巧克力">
+            <div class="product-info">
+                <h2>85%黑巧克力</h2>                
+            </div>
+        </article>
+
+        <!-- Product 8 -->
+        <article class="product-card">
+            <img src="Signature70PercentDarkChocolate.webp" alt="70%黑巧克力">
+            <div class="product-info">
+                <h2>70%黑巧克力</h2>
+            </div>
+        </article>
+
+        <!-- Product 9 -->
+        <article class="product-card">
+            <img src="SignatureMilkChocolate.webp" alt="经典牛奶巧克力">
+            <div class="product-info">
+                <h2>经典牛奶巧克力</h2>
+            </div>
+        </article>
+
+        <!-- Product 10 -->
+        <article class="product-card">
+            <img src="ThaiBulletChili70PercentDarkChocolate.webp" alt="泰式子弹辣椒黑巧克力">
+            <div class="product-info">
+                <h2>泰式子弹辣椒黑巧克力</h2>
+            </div>
+        </article>
+
+        <!-- Product 11 -->
+        <article class="product-card">
+            <img src="MasalaChaiMilkChocolate.webp" alt="玛萨拉茶风味牛奶巧克力">
+            <div class="product-info">
+                <h2>玛萨拉茶风味牛奶巧克力</h2>
+            </div>
+        </article>
+
+        <!-- Product 12 -->
+        <article class="product-card">
+            <img src="TomYumDarkChocolate.webp" alt="冬阴功咖喱风味黑巧克力">
+            <div class="product-info">
+                <h2>冬阴功咖喱风味黑巧克力</h2>
+            </div>
+        </article>
+
+        <!-- Product 13 -->
+        <article class="product-card">
+            <img src="ThaiCoconutCurry65PercentDarkChocolate.webp" alt="椰子咖喱风味巧克力">
+            <div class="product-info">
+                <h2>椰子咖喱风味巧克力</h2>
+            </div>
+        </article>
+
+        <!-- Product 14 -->
+        <article class="product-card">
+            <img src="ThaiPeanutCurry75PercentDarkChocolate.webp" alt="花生咖喱风味巧克力">
+            <div class="product-info">
+                <h2>花生咖喱风味巧克力</h2>
+            </div>
+        </article>
+
+        <!-- Product 15 -->
+        <article class="product-card">
+            <img src="KhaoSoiCurryMilkChocolate.webp" alt="泰式咖喱面风味牛奶巧克力">
+            <div class="product-info">
+                <h2>泰式咖喱面风味牛奶巧克力</h2>
+            </div>
+        </article>
+
+        <!-- Product 16 -->
+        <article class="product-card">
+            <img src="MangoAndChili70PercentDarkChocolate.webp" alt="芒果辣椒风味巧克力">
+            <div class="product-info">
+                <h2>芒果辣椒风味巧克力</h2>
+            </div>
+        </article>
+
+        <!-- Product 17 -->
+        <article class="product-card">
+            <img src="SmokySmoresHalloween.webp" alt="无糖香草巧克力">
+            <div class="product-info">
+                <h2>（限量版）烟熏可可碎牛奶巧克力</h2>
+            </div>
+        </article>
+        
+        <!-- Product 18 -->
+        <article class="product-card">
+            <img src="85PercentSimplyCacaoChocolateMilk.webp" alt="纯可可牛奶巧克力">
+            <div class="product-info">
+                <h2>纯可可牛奶巧克力</h2>
+            </div>
+        </article>
+
+        <!-- Product 19 -->
+        <article class="product-card">
+            <img src="85PercentSimplyCacaoChocolateMilkAlmondsAndSeaSalt.webp" alt="无糖海盐杏仁巧克力">
+            <div class="product-info">
+                <h2>无糖海盐杏仁巧克力</h2>
+            </div>
+        </article>
+
+        <!-- Product 20 -->
+        <article class="product-card">
+            <img src="VanillaBeanSugarFreeChocolate.webp" alt="无糖香草巧克力">
+            <div class="product-info">
+                <h2>无糖香草巧克力</h2>
+            </div>
+        </article>
+
+        
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <h3>咨询</h3>
+            <div class="contact-details">
+                <div class="contact-item">
+                    <p>邮件: <a href="mailto:info@siamayachocolate.com">ying@siamayachchina.com</a></p>
+                </div>
+                <div class="contact-item">
+                    <p>电话: <a href="tel:+1234567890">(+86)158 023 40874</a></p>
+                </div>
+                <div class="contact-item">
+                    <p>地址：浙江</p>
+                </div>
+                <div class="contact-item">
+                    <p>社交: 
+                        <a href="https://www.xiaohongshu.com/user/profile/68667e56000000001e039d31" target="_blank" style="color:red">小红书</a>: <b>26154135877</b> | 
+                        <a href="https://siamayachina.com" style="color:red">微信</a>: <b>siamaya01</b>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+</body>
+</html>
