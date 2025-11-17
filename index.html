@@ -46,7 +46,8 @@
             font-size: 2.5rem;
         }-->
 
- /* Container for multiple product cards (e.g., grid or flex) */
+ /* Container for multiple product cards */
+/* Container for multiple product cards */
 .product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -58,7 +59,7 @@
 .product-card {
     display: flex;
     flex-direction: column;
-    height: 100%;                    /* Critical: equal height for alignment */
+    height: 100%;                    /* All cards same height */
     background: #fff;
     border-radius: 12px;
     overflow: hidden;
@@ -70,40 +71,51 @@
     transform: translateY(-4px);
 }
 
+/* IMAGE: Always grows to fill ALL available space above title & price */
 .product-card img {
     width: 100%;
-    height: 180px;                   /* Fixed height for consistency */
-    object-fit: cover;
+    height: auto;
+    flex: 1 1 auto;                  /* ← Key: Image takes ALL remaining space */
+    object-fit: cover;               /* No distortion — scales to fill */
+    min-height: 0;                   /* Allows flex to work properly */
+    display: block;
 }
 
+/* Title: Fixed height (handles 1 or 2 lines consistently) */
 .product-card .product-info {
     padding: 0.75rem;
-    flex-shrink: 0;
+    flex: 0 0 3.5rem;                /* ← Fixed height: fits 2 lines */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
+    overflow: hidden;
 }
 
 .product-card .product-info h2 {
     margin: 0;
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #333;
+    line-height: 1.4;
+    word-wrap: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;           /* Max 2 lines */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
-/* Price pinned to bottom — all align perfectly */
+/* Price: Fixed height, pinned to bottom */
 .product-card .price {
-    margin-top: auto;                /* Pushes to bottom */
-    padding: 0.75rem;
+    flex: 0 0 2.5rem;                 /* ← Fixed height for price */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-weight: bold;
     font-size: 1.15rem;
     color: #d32f2f;
-    text-align: center;
     background: #fff;
     border-top: 1px solid #eee;
-    flex-shrink: 0;
 }
-        .product-info h2 {
-            font-size: 1.5rem;
-            margin-bottom: 0px;
-        }
 
         .product-info p {
             display:;
