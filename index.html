@@ -46,43 +46,70 @@
             font-size: 2.5rem;
         }-->
 
-        /* Product Grid Styles */
-        .product-grid {
-            display: grid;
-            grid-template-columns: repeat(6, 1fr); /* 4 columns on desktop */
-            gap: 20px;
-            padding: 20px;
-            max-width: auto;
-            margin: 0 auto;
-        }
+ /* Container for multiple product cards (e.g., grid or flex) */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1.5rem;
+    padding: 1rem;
+}
 
-        .product-card {
-            background: #f9f9f9;
-            border: 1px solid #ddd;
-            border-radius: 0px;
-            overflow: hidden;
-            text-align: center;
-        }
+/* Individual product card */
+.product-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;                    /* Critical: equal height for alignment */
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
 
-        .product-card img {
-            width: 100%;
-            height: auto;
-            object-fit: contain; /* Ensures image fits nicely */
-        }
+.product-card:hover {
+    transform: translateY(-4px);
+}
 
-        .product-info {
-            padding: 15px;
-        }
+.product-card img {
+    width: 100%;
+    height: 180px;                   /* Fixed height for consistency */
+    object-fit: cover;
+}
 
+.product-card .product-info {
+    padding: 0.75rem;
+    flex-shrink: 0;
+    text-align: center;
+}
+
+.product-card .product-info h2 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+/* Price pinned to bottom — all align perfectly */
+.product-card .price {
+    margin-top: auto;                /* Pushes to bottom */
+    padding: 0.75rem;
+    font-weight: bold;
+    font-size: 1.15rem;
+    color: #d32f2f;
+    text-align: center;
+    background: #fff;
+    border-top: 1px solid #eee;
+    flex-shrink: 0;
+}
         .product-info h2 {
             font-size: 1.5rem;
             margin-bottom: 0px;
         }
 
         .product-info p {
-            display:none;
+            display:;
             font-size: 1.2rem;
-            color: #333;
+            color: red;
+            font-weight: bold;
         }
 
         /* Footer Styles */
@@ -166,19 +193,21 @@
     <section class="product-grid">
         
         <!-- Product 1 -->
-        <article class="product-card">
-            <img src="CoconutMilkDarkChocolate.webp" alt="Siamaya 椰奶黑巧克力">
-            <div class="product-info">
-                <h2>椰奶黑巧克力</h2>
-            </div>
-        </article>
+<article class="product-card">
+    <img src="CoconutMilkDarkChocolate.webp" alt="Siamaya 椰奶黑巧克力">
+    <div class="product-info">
+        <h2>椰奶黑巧克力</h2>
+    </div>
+    <p class="price">108 元</p>
+</article>
 
         <!-- Product 2 -->
         <article class="product-card">
             <img src="BananaCrunchMilkChocolate.webp" alt="Siamaya 香蕉脆片牛奶巧克力">
             <div class="product-info">
-                <h2>香蕉脆片牛奶巧克力</h2>                
+                <h2>香蕉脆片牛奶巧克力</h2>
             </div>
+            <p class="price">108 元</p>                
         </article>
 
         <!-- Product 3 -->
@@ -187,6 +216,7 @@
             <div class="product-info">
                 <h2>咖啡脆牛奶巧克力</h2>
             </div>
+            <p class="price">108 元</p>
         </article>
 
         <!-- Product 4 -->
@@ -195,6 +225,7 @@
             <div class="product-info">
                 <h2>榴莲牛奶巧克力</h2>
             </div>
+            <p class="price">108 元</p>
         </article>
 
         <!-- Product 5 -->
@@ -203,22 +234,25 @@
             <div class="product-info">
                 <h2>泰式奶茶牛奶巧克力</h2>                
             </div>
+            <p class="price">108 元</p>
         </article>
 
         <!-- Product 6 -->
         <article class="product-card">
             <img src="HillCoffeeAndPomelo.webp" alt=" Siamaya 咖啡&柚子黑黑巧克力">
             <div class="product-info">
-                <h2>咖啡&柚子黑巧克力</h2>                
+                <h2>咖啡&柚子黑巧克力</h2>
             </div>
+            <p class="price">108 元</p>
         </article>
 
         <!-- Product 7 -->
         <article class="product-card">
             <img src="Signature85PercentDarkChocolate.webp" alt="85%黑巧克力">
             <div class="product-info">
-                <h2>85%黑巧克力</h2>                
+                <h2>85%黑巧克力</h2>       
             </div>
+            <p class="price">108 元</p>         
         </article>
 
         <!-- Product 8 -->
@@ -227,6 +261,7 @@
             <div class="product-info">
                 <h2>70%黑巧克力</h2>
             </div>
+            <p class="price">108 元</p>
         </article>
 
         <!-- Product 9 -->
@@ -235,6 +270,7 @@
             <div class="product-info">
                 <h2>经典牛奶巧克力</h2>
             </div>
+            <p class="price">108 元</p>
         </article>
 
         <!-- Product 10 -->
@@ -243,6 +279,7 @@
             <div class="product-info">
                 <h2>泰式子弹辣椒黑巧克力</h2>
             </div>
+            <p class="price">108 元</p>
         </article>
 
         <!-- Product 11 -->
@@ -251,6 +288,7 @@
             <div class="product-info">
                 <h2>玛萨拉茶风味牛奶巧克力</h2>
             </div>
+            <p class="price">108 元</p>
         </article>
 
         <!-- Product 12 -->
@@ -259,6 +297,7 @@
             <div class="product-info">
                 <h2>冬阴功咖喱风味黑巧克力</h2>
             </div>
+            <p class="price">108 元</p>
         </article>
 
         <!-- Product 13 -->
@@ -267,6 +306,7 @@
             <div class="product-info">
                 <h2>椰子咖喱风味巧克力</h2>
             </div>
+            <p class="price">108 元</p>
         </article>
 
         <!-- Product 14 -->
@@ -275,6 +315,7 @@
             <div class="product-info">
                 <h2>花生咖喱风味巧克力</h2>
             </div>
+            <p class="price">108 元</p>
         </article>
 
         <!-- Product 15 -->
@@ -283,6 +324,7 @@
             <div class="product-info">
                 <h2>泰式咖喱面风味牛奶巧克力</h2>
             </div>
+            <p class="price">108 元</p>
         </article>
 
         <!-- Product 16 -->
@@ -291,6 +333,7 @@
             <div class="product-info">
                 <h2>芒果辣椒风味巧克力</h2>
             </div>
+            <p class="price">108 元</p>
         </article>
 
         <!-- Product 17 -->
@@ -299,6 +342,7 @@
             <div class="product-info">
                 <h2>烟熏可可碎牛奶巧克力</h2>
             </div>
+            <p class="price">108 元</p> 
         </article>
 
         <!-- Product 18 -->
@@ -307,6 +351,7 @@
             <div class="product-info">
                 <h2>美式香蕉船巧克力</h2>
             </div>
+            <p class="price">108 元</p>
         </article>
 
         <!-- Product 19 -->
@@ -316,6 +361,7 @@
             <div class="product-info">
                 <h2>芒果辣椒风味巧克力</h2>
             </div>
+            <p class="price">108 元</p>
         </article>
 
        <!-- Product 20 -->
@@ -323,29 +369,27 @@
             <img src="GermanChocolateCake.png" alt="德式蛋糕
 70%黑巧克力">
             <div class="product-info">
-                <h2>德式蛋糕
-70%黑巧克力</h2>
+                <h2>德式蛋糕70%黑巧克力</h2>
             </div>
+            <p class="price">108 元</p>
         </article>
         
         <!-- Product 21 -->
         <article class="product-card">
-            <img src="Mooncake.png" alt="月饼
-牛奶巧克力">
+            <img src="Mooncake.png" alt="月饼牛奶巧克力">
             <div class="product-info">
-                <h2>月饼
-牛奶巧克力</h2>
+                <h2>月饼牛奶巧克力</h2>
             </div>
+            <p class="price">108 元</p>
         </article>
 
         <!-- Product 22 -->
         <article class="product-card">
-            <img src="ApplePie.png" alt="苹果派
-牛奶巧克力">
+            <img src="ApplePie.png" alt="苹果派牛奶巧克力">
             <div class="product-info">
-                <h2>苹果派
-牛奶巧克力</h2>
+                <h2>苹果派牛奶巧克力</h2>
             </div>
+            <p class="price">108 元</p>
         </article>
  
         <!-- Product 23 -->
@@ -354,6 +398,7 @@
             <div class="product-info">
                 <h2>纯可可牛奶巧克力</h2>
             </div>
+            <p class="price">108 元</p>
         </article>
 
         <!-- Product 24 -->
@@ -362,6 +407,7 @@
             <div class="product-info">
                 <h2>无糖海盐杏仁巧克力</h2>
             </div>
+            <p class="price">108 元</p>
         </article>
 
         <!-- Product 25 -->
@@ -370,6 +416,7 @@
             <div class="product-info">
                 <h2>无糖香草巧克力</h2>
             </div>
+            <p class="price">108 元</p>
         </article>
 
         <!-- Product 26 -->
@@ -378,6 +425,7 @@
             <div class="product-info">
                 <h2>可可碎</h2>
             </div>
+            <p class="price">108 元</p>
         </article>
 
         <!-- Product 27 -->
@@ -386,6 +434,7 @@
             <div class="product-info">
                 <h2>可可粉</h2>
             </div>
+            <p class="price">108 元</p>
         </article>
 
         <!-- Product 28 -->
@@ -394,6 +443,7 @@
             <div class="product-info">
                 <h2>饮用巧克力粉</h2>
             </div>
+            <p class="price">108 元</p>
         </article>
 
 
