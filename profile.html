@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIAMAYA Chocolate - Company Profile & Product Catalog</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="/SIAMAYACircleLogo.png">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: red;
+            color: white;
+        }
+
+        .logo {
+            width:auto;
+            margin-bottom:10px;
+        }
+
+        .header {
+            background-color:red;
+            padding: 10px 20px;             
+            text-align:center;
+        }
+
+        button { 
+            margin: 0px 1px;
+            text-align:center;
+            height:50px; 
+            width:100px; 
+            font-size:20px; 
+            color:black; 
+            background-color:white; 
+            border:none;
+            font-weight:bold; 
+            border-radius:10px;
+        }     
+         
+        .header > #namecard {
+            margin-top:20px;
+            width:100%;
+            height:auto;
+            box-shadow: -5px 5px 10px black;            
+        }
+         
+        .content {
+            padding: 2px;
+            margin:0 auto;
+            text-align:justify;
+        }
+
+        ul {
+            text-align:center;
+        }
+
+        h2 {
+            text-align:center;
+        }
+        
+
+     /* CATALOGUE SECTION */
+            body { 
+                background-color:red; 
+                margin:0; 
+                font-family:system-ui, "Microsoft YaHei", sans-serif;
+            }
+        
+            .header {
+                background-color:red;
+                padding: 10px 20px;             
+                text-align:center;
+            }
+        
+            .header img {
+                height: 40px;
+                margin-right:0px; 
+            }
+        
+            button {
+                margin: 0px 1px;
+                text-align:center;
+                height:50px; 
+                width:100px; 
+                font-size:20px; 
+                color:black; 
+                background-color:white; 
+                border:none;
+                font-weight:bold; 
+                border-radius:10px;
+            }
+
+            h1 {
+                color:white;
+            }
+
+            .imagestrip {
+                width: 100%;
+                height: auto;
+            }
+
+            /* Table fixes only */
+            table {                
+                background:white;
+                width:100%;
+                border-collapse:collapse;
+                table-layout:auto;
+                margin:0px 1px;
+            }
+            
+            th, td {
+                border:2px solid black;
+                padding:1px;
+                text-align:center;
+                vertical-align:middle;
+                font-size:12px;
+            }
+              
+            th {
+                background:#f0f0f0;
+                font-weight:bold;
+                white-space:nowrap;
+            }
+
+            /* Image column only */
+            td.img-cell {
+                padding:8px;
+                min-width:100px;
+                width:1px;
+                white-space:nowrap;
+            }
+            td.img-cell img {
+                max-width:100%;
+                max-height:180px;
+                height:auto;
+                width:auto;
+                display:block;
+                margin:0 auto;
+                object-fit:contain;
+            }
+
+            .prodname {
+                font-size:10px;
+                font-weight:bold;
+            }
+            .wholesaleprice {
+                font-size:14px;
+                color:red;
+                font-weight:bold;
+            }
+            .catalogue {
+                color:black;
+            }
+
+/* Footer*/
+            footer {
+                background:#333;
+                color:white;
+                padding:20px;
+                text-align:center;
+                margin-top:50px;
+            }
+            .contact-details {
+                display:flex;
+                flex-wrap:wrap;
+                justify-content:center;
+                gap:20px;
+            }
+
+
+
+/* MEDIA - Big Screens*/
+            @media (min-width:520px) {
+                #namecard {
+                    max-width: 800px;
+                }
+                .content {
+                    max-width: 600px;
+                }                
+                .thirdTH {
+                    padding:0px 30px;
+                }
+                td.img-cell {
+                    width:max-content;
+                    width:-moz-max-content;
+                    max-width:300px;
+                }
+                td {
+                    font-size:14px;                   
+                }
+                .prodname {
+                    font-size:16px;
+                }
+                .wholesaleprice {
+                    font-size:18px;
+                }
+            }     
+    /* MEDIA - MEGA BIG SCREENS */        
+            @media (min-width:720px) {
+                .content {
+                    max-width: 800px;
+                }
+                body {
+                    max-width:800px;
+                    margin:auto;
+                }
+                footer {
+                    max-width:100%;
+                }
+            }
+
+        </style>
+</head>
+<body>
+
+    <div class="header">
+        <a href="http://SIAMAYAchina.com"><img class="logo" src="SIAMAYA_TransparentBackground.png"></a>
+                
+    <div class="display:flex;">
+        <button><a href="https://siamayachina.com">中文</a></button>
+        <button><a href="#catalogueHeading">Catalog</a></button>
+        
+        
+    </div>
+    <img ID="namecard" src="JYC.webp">
+    </div>
+    
+
+<div class="content">
+<h1 style="text-align:center">SIAMAYA Chocolate Company Profile</h1><br>
+
+<h2>Overview</h2>
+<p>Founded in 2017 and headquartered in Chiang Mai, Thailand, SIAMAYA Chocolate is a leading manufacturer of bean-to-bar cocoa products and is renowned for its innovative approach to fine artisanal chocolate. The company was founded by passionate food enthusiast Neil Ransom in 2017 and has been transforming locally-sourced Thai cocoa beans into award-winning chocolates, infusing them with unique Thai flavors for almost a decade now. SIAMAYA Chocolate is committed to quality and sustainability, showcasing the rich traditional flavors of Thailand through its handcrafted products.</p>
+
+<h2>Mission and Vision</h2>
+<p>SIAMAYA Chocolate's mission is to create exceptional chocolate products that highlight the rich flavors and natural ingredients of Thailand while adhering to the highest standards of craftsmanship. The company is committed to becoming a global leader in the artisanal chocolate industry, driving sustainable practices through education and collaboration, and fostering community engagement.</p>  
+
+<h2>Products and Innovation</h2>
+<p>SIAMAYA Chocolate focuses on handcrafting chocolates using premium Thai cocoa beans and local ingredients. The company is known for its unique flavor combinations, perfectly blending traditional Thai flavors such as Thai milk tea, coconut, chili, tom yum soup, and even durian with high-quality chocolate. These also include seasonal and regional limited editions.</p> 
+
+<p>SIAMAYA also offers vegan options and interactive experiences such as chocolate-making workshops and truffle events, thus allowing customers to create their own personalized chocolates. The company's commitment to innovation has earned it numerous international chocolate awards, further solidifying its outstanding reputation in the industry.</p>
+
+<img style="width:100%; height:auto;" src="Awards.webp">
+
+<h2>Sustainability and Community Engagement</h2>
+<p>SIAMAYA Chocolate Company adheres to a sustainable development philosophy, sourcing cocoa beans directly from local Thai farmers to ensure fair trade and a supply of high-quality raw materials. The company works closely with local organizations, including schools and charities (such as Zoe, which supports street children), to promote education and social impact. SIAMAYA's packaging designs, created by local artists and inspired by the vibrant colors of Lanna fabrics, fully reflect the company's support for the Chiang Mai community and its promotion of Northern Thai culture.</p>
+
+<h2>Operations and Market Coverage</h2>
+<p>SIAMAYA is headquartered in Chiang Mai, with its factory located near Wat Phra That Doi Suthep, where all products are meticulously crafted. The company's products are available at its flagship store near Tha Pae Gate, as well as at select retail outlets throughout Thailand, including Rimping, Gourmet Markets, Big C, Central Foodhall, Baimiang, and Dear Tummy at Icon Siam.</p> 
+    
+<p>Furthermore, SIAMAYA conducts international sales through select partners, such as Marriott, Anantara and Mövenpick and already ships to China (exclusive distributor), Japan, the United States, Australia and Europe.</p> 
+
+<img style="width:100%; height:auto;" src="PartnersAndCustomers.png">
+
+<h2>Customer Experience</h2>  
+<p>SIAMAYA chocolate offers visitors unique interactive experiences, including factory tours, chocolate tastings, and workshops suitable for adults and children (minimum age 7 years old, accompanied by an adult). These activities provide in-depth demonstrations of the complete chocolate-making process from cocoa beans to finished chocolates, allowing participants to explore the art of chocolate making. Customer reviews particularly highlight the attractive, high-quality packaging and unique, innovative flavors with our Durian, Thai Tea, Coconut Curry, Tom Yum, Thai Bullet Chili and Mango Chili flavors being particularly popular among Chinese customers.</p>
+
+<h2>Leadership and Values</h2>  
+<p>Under the leadership of founder Neil Ransom, SIAMAYA Chocolate combines the passion for Asian cuisine with a focused dedication to chocolate craftsmanship. The founder learned the chocolate-making process from scratch and is committed to building community connections, reflecting the company's core values ​​of quality, creativity, and social responsibility.</p>
+
+<h2>Recognition and Future Vision</h2>
+<p>SIAMAYA Chocolate has gained widespread international acclaim and numerous chocolate industry awards for its innovative flavors and unwavering pursuit of quality. The company continues to expand its product line, explore new flavor combinations, and strengthen its brand influence in both local and international markets. Upholding a commitment to sustainability and community engagement, SIAMAYA is steadily progressing towards becoming a leading brand in the fine chocolate industry.</p>
+
+<p>SIAMAYA Chocolate cordially invites chocolate lovers and curious visitors to experience the essence of Thailand and the perfect fusion of tradition and innovation in every bite of its handcrafted, award-winning creative products.</p>
+
+</div>
+
+
+       <hr>
+
+
+
+
+
+<!---CATALOGUE-->
+    
+<div class="catalogue">
+        <div class="header">
+            <a href="http://SIAMAYAchina.com"><img class="logo" src="SIAMAYA_TransparentBackground.png"></a>
+            <h1 id="catalogueHeading">SIAMAYA Chocolate Product Catalogue</h1>
+            
+        </div>
+
+        <img class="imagestrip" src="imagestrip.webp"> 
+
+        <table>
+            <thead>
+                <tr>
+                    <th><h2>Product Name</h2></th>
+                    <th><h2>Image</h2></th>
+                    <th class="thirdTH"><h2><span style="padding-left:10px; padding-right:10px;">Prices</span></h2></th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                   <td><span class="prodname">Durian Milk Chocolate</span><br>Made with <b>real durian fruit</b> infused into SIAMAYA's <b>Signature Milk Chocolate</b> - one of our most popular flavors in China and Asia, a true tropical treat！<span style="color:red"><br><br>Award: <b>ICA International Chocolat Awards 2019 - Bronze</b></span><hr>Dimensions: 8.5 x 1.2 x 17cm, Weight: 75g<hr><span style="color:red">This product is gluten-free and suitable for vegetarians. Handmade in Thailand.</span></td>
+                    <td class="img-cell"><img src="DurianMilkChocolate.webp"></td>
+                    <td style="text-align:center;">Retail price:<br><span style="color:red; font-weight:bold;">118 CNY<hr></span><b>*Basic </b>wholesale price:<br><span class="wholesaleprice">81.50 CNY</span><br>(min qty: 24 - any combination)<br><b>*negotiable for large quantities</b><span style="color:red"></span></td>
+                </tr>
+                 
+                <tr>
+                    <td><span class="prodname">Thai Tea Milk Chocolate</span><br>The ultimate blend of Thai flavors, combining the pure aroma of <b>real Thai tea</b> with SIAMAYA's <b>Signature Milk Chocolate</b> made from <b>Thai cacao beans</b> for the ultimate taste experience.<hr>Dimensions: 8.5 x 1.2 x 17cm, Weight: 75g<hr><span style="color:red">This product is gluten-free and suitable for vegetarians. Handmade in Thailand.</span></td>
+                    <td class="img-cell"><img src="ThaiTeaMilkChocolate.webp"></td>
+                    <td style="text-align:center;">Retail price:<br><span style="color:red; font-weight:bold;">118 CNY<hr></span><b>*Basic </b>wholesale price:<br><span class="wholesaleprice">81.50 CNY</span><br>(min qty: 24 - any combination)<br><b>*negotiable for large quantities</b><span style="color:red"></span></td>
+                </tr>
+
+                <tr>
+                    <td><span class="prodname">Thai Coconut Curry 65% Dark Chocolate</span><br>Inspired by <b>Thai Tom Kha coconut curry soup</b>, this flavor masterfully layers SIAMAYA's <b>Coconut Milk Dark Chocolate</b> with flavorful <b>chilies</b>, <b>lemongrass</b>, <b>galangal</b>, and <b>candied tomatoes</b>, creating a rich and complex flavor profile.<br><span style="color:red">Award: <b>ICA International Chocolate Awards 2019 Silver</b><br>Award: <b>AOC Academy of Chocolate Award 2020 Silver</b></span><hr>Dimensions: 8.5 x 1.2 x 17cm, Weight: 75g<hr><span style="color:red">This product is gluten-free and suitable for vegans. Handmade in Thailand.</span></td>
+                    <td class="img-cell"><img src="ThaiCoconutCurry65PercentDarkChocolate.webp" ></td>
+                    <td style="text-align:center;">Retail price:<br><span style="color:red; font-weight:bold;">118 CNY<hr></span><b>*Basic </b>wholesale price:<br><span class="wholesaleprice">81.50 CNY</span><br>(min qty: 24 - any combination)<br><b>*negotiable for large quantities</b><span style="color:red"></span></td>
+                </tr>
+ 
+                <tr>
+                    <td><span class="prodname">Tom Yum Dark Chocolate</span><br>Inspired by the famous and popular <b>Thai Tom Yum soup</b>, this innovative blend of <b>local cacao beans</b>, zesty <b>lemongrass</b>, <b>kaffir lime</b>, and a hint of <b>chili</b>, creating a wonderfully sweet and tangy taste that leaves you wanting more.<br><hr>Dimensions: 8.5 x 1.2 x 17cm, Weight: 75g<hr><span style="color:red">This product is gluten-free and suitable for vegetarians. Handmade in Thailand.</span></td>
+                    <td class="img-cell"><img src="TomYumDarkChocolate.webp"></td>
+                    <td style="text-align:center;">Retail price:<br><span style="color:red; font-weight:bold;">118 元/块</span><hr><b>*Basic </b>wholesale price:<br><span class="wholesaleprice">81.50 CNY</span><br>(min qty: 24 - any combination)<br><b>*negotiable for large quantities</b><span style="color:red"></span></td>
+                </tr>
+
+                <tr>
+                    <td><span class="prodname">Thai Bullet Chili 70% Dark Chocolate</span><br>A unique blend of SIAMAYA's <b>Signature 70% Dark Chocolate</b> and sun-dried <b>Thai bullet chilies</b>, resulting in an amazing and unforgettable spicy flavor!<hr>Dimensions: 8.5*1.2x17cm，Dimensions: 75g<hr><span style="color:red">This product is gluten-free and suitable for vegans. Handmade in Thailand.</span></td>
+                    <td class="img-cell"><img src="ThaiBulletChili70PercentDarkChocolate.webp"></td>
+                    <td style="text-align:center;">Retail price:<br><span style="color:red; font-weight:bold;">118 CNY<hr></span><b>*Basic </b>wholesale price:<br><span class="wholesaleprice">81.50 CNY</span><br>(min qty: 24 - any combination)<br><b>*negotiable for large quantities</b><span style="color:red"></span></td>
+                </tr>
+
+                <tr>
+                    <td><span class="prodname">Mango & Chili 70% Dark Chocolate</span><br>Savor the unique flavors of summer in Thailand with SIAMAYA's unique combination of <b>sun-dired ruby mango</b>, <b>local chilies</b>, and <b>sea salt</b>!<hr>Dimensions: 8.5 x 1.2 x 17cm, Weight: 75g<hr><span style="color:red">This product is gluten-free and suitable for vegans. Handmade in Thailand.</span></td>
+                    <td class="img-cell"><img src="MangoAndChili70PercentDarkChocolate.webp"></td>
+                    <td style="text-align:center;">Retail price:<br><span style="color:red; font-weight:bold;">118 CNY<hr></span><b>*Basic </b>wholesale price:<br><span class="wholesaleprice">81.50 CNY</span><br>(min qty: 24 - any combination)<br><b>*negotiable for large quantities</b><span style="color:red"></span></td>
+                </tr>
+
+                <tr>
+                    <td><span class="prodname">Apple Pie</span><br>SIAMAYA's creamy <b>Signature Milk Chocolate</b> combined with the taste of Grandma's apple pie! This flavor blends <b>real apples</b> and <b>cinnamon</b> with <b>crumbly pie crust crumbs</b>. Every bite is filled with the warm sweetness of classic home-made apple pie and will remind you of a cozy kitchen and fond autumn memories.<hr>Dimensions: 8.5 x 1.2 x 17cm, Weight: 75g<hr><span style="color:red">This product is soy-free and suitable for vegetarians. Handmade in Thailand.</span></td>
+                    <td class="img-cell"><img src="ApplePie.png"></td>
+                    <td style="text-align:center;">Retail price:<br><span style="color:red; font-weight:bold;">118 CNY<hr></span><b>*Basic </b>wholesale price:<br><span class="wholesaleprice">81.50 CNY</span><br>(min qty: 24 - any combination)<br><b>*negotiable for large quantities</b><span style="color:red"></span></td>
+                </tr>
+
+                <tr>
+                    <td><span class="prodname">Masala Chai Milk Chocolate</span><br>Inspired by Indian masala tea, this bar is made with our special full-cream <b>Signature Milk Chocolate</b> infused with <b>five aromatic herbs and spices</b>.<span style="color:red"><br>Award: <b>AOC Academy of Chocolate 2023 Bronze</b></span><hr>Dimensions: 8.5 x 1.2 x 17cm, Weight: 75g<hr><span style="color:red">This product is gluten-free and suitable for vegetarians. Handmade in Thailand.</span></td>
+                    <td class="img-cell"><img src="MasalaChaiMilkChocolate.webp"></td>
+                    <td style="text-align:center;">Retail price:<br><span style="color:red; font-weight:bold;">118 CNY<hr></span><b>*Basic </b>wholesale price:<br><span class="wholesaleprice">81.50 CNY</span><br>(min qty: 24 - any combination)<br><b>*negotiable for large quantities</b><span style="color:red"></span></td>
+                </tr>
+
+                <tr>
+                    <td><span class="prodname">Khao Soi Curry Milk Chocolate</span><br>Northern Thailand's beloved curry <b>Khao Soi</b>, infused in our <b>Signature Milk Chocolate</b>. Hugely popular and an entirely unique taste sensation due to its innovative combination of sweet, savory and spicy flavors!<span style="color:red"><br>Award: <b>AOC Academy of Chocolate 2023 Bronze</b></span><hr>Dimensions: 8.5 x 1.2 x 17cm, Weight: 75g<hr><span style="color:red">This product is soy-free and suitable for vegetarians. Handmade in Thailand.</span></td>
+                    <td class="img-cell"><img src="KhaoSoiCurryMilkChocolate.webp"></td>
+                    <td style="text-align:center;">Retail price:<br><span style="color:red; font-weight:bold;">118 CNY<hr></span><b>*Basic </b>wholesale price:<br><span class="wholesaleprice">81.50 CNY</span><br>(min qty: 24 - any combination)<br><b>*negotiable for large quantities</b><span style="color:red"></span></td>
+                </tr>
+
+                <tr>
+                    <td><span class="prodname">Thai Peanut Curry 70% Dark Chocolate</span><br>Inspired by Thai <b>Massaman</b> Peanut Curry, this popular flavor features SIAMAYA's <b>70% Signature Dark Chocolate</b> layered with <b>roasted peanuts</b>, <b>chilies</b>, <b>cinnamon</b>, <b>lemongrass</b> and <b>candied ginger</b> to make for a rich and layered taste experience!<br><span style="color:red">Award: <b>AOC Academy of Chocolate 2020 Bronze</b></span><hr>Dimensions: 8.5 x 1.2 x 17cm, Weight: 75g<hr><span style="color:red">This product is gluten-free and suitable for vegans. Handmade in Thailand.</span></td>
+                    <td class="img-cell"><img src="ThaiPeanutCurry75PercentDarkChocolate.webp"></td>
+                    <td style="text-align:center;">Retail price:<br><span style="color:red; font-weight:bold;">118 CNY<hr></span><b>*Basic </b>wholesale price:<br><span class="wholesaleprice">81.50 CNY</span><br>(min qty: 24 - any combination)<br><b>*negotiable for large quantities</b><span style="color:red"></span></td>
+                </tr>
+
+                <tr>
+                    <td><span class="prodname">Hill Coffee & Pomelo 70% Dark Chocolate</span><br>Meticulously ground <b>Arabica coffee beans</b> from the hills of Northern Thailand, blended with <b>Thai cocoa</b> and <b>candied pomelo peel</b> to create a elegant 70% dark chocolate with a sweet citrus burst!<hr>Dimensions: 8.5 x 1.2 x 17cm, Weight: 75g<hr><span style="color:red">This product is gluten-free and suitable for vegans. Handmade in Thailand.</span></td>
+                    <td class="img-cell"><img src="HillCoffeeAndPomelo.webp"></td>
+                    <td style="text-align:center;">Retail price:<br><span style="color:red; font-weight:bold;">118 CNY<hr></span><b>*Basic </b>wholesale price:<br><span class="wholesaleprice">81.50 CNY</span><br>(min qty: 24 - any combination)<br><b>*negotiable for large quantities</b><span style="color:red"></span></td>
+                </tr>
+
+                <tr>
+                    <td><span class="prodname">Coffee Crunch Milk Chocolate</span><br>The ultimate pairing of chocolate and coffee - this flavor combines <b>Thai Arabica coffee</b> with SIAMAYA's <b>Signature Milk Chocolate</b>, resulting in a bar with a subtle coffee crunch.<hr>Dimensions: 8.5 x 1.2 x 17cm, Weight: 75g<hr><span style="color:red">This product is gluten-free and suitable for vegetarians. Handmade in Thailand.</span></td>
+                    <td class="img-cell"><img src="CoffeeCrunchMilkChocolate.webp"></td>
+                    <td style="text-align:center;">Retail price:<br><span style="color:red; font-weight:bold;">118 CNY<hr></span><b>*Basic </b>wholesale price:<br><span class="wholesaleprice">81.50 CNY</span><br>(min qty: 24 - any combination)<br><b>*negotiable for large quantities</b><span style="color:red"></span></td>
+                </tr>
+
+                <tr>
+                    <td><span class="prodname">Banana Crunch Milk Chocolate</span><br>A combination of SIAMAYA's <b>Signature Milk Chocolate</b> and two different types of <b>Thai bananas</b>, resulting in a smooth, rich chocolate with a strong tropical flavor and a crunchy texture - a true feast for the tastebuds!<span style="color:red"><br>Award: <b>ICA International Chocolate Awards 2021 Bronze</b><br>Award: <b>ICA International Chocolate Awards 2022 Bronze</b></span><hr>Dimensions: 8.5 x 1.2 x 17cm, Weight: 75g<hr><span style="color:red">This product is gluten-free and suitable for vegetarians. Handmade in Thailand.</span></td>
+                    <td class="img-cell"><img src="BananaCrunchMilkChocolate.webp"></td>
+                    <td style="text-align:center;">Retail price:<br><span style="color:red; font-weight:bold;">118 CNY<hr></span><b>*Basic </b>wholesale price:<br><span class="wholesaleprice">81.50 CNY</span><br>(min qty: 24 - any combination)<br><b>*negotiable for large quantities</b><span style="color:red"></span></td>
+                </tr>
+ 
+                <tr>
+                    <td><span class="prodname">Coconut Milk 65% Dark Chocolate</span><br>A perfect blend of roasted <b>Thai coconut</b> with <b>coconut milk</b> - this delicious, smooth, coconut-flavored dark chocolate is guaranteed to  satisfy with its delightful velvety texture and coconut flavor!<hr>Dimensions: 8.5 x 1.2 x 17cm, Weight: 75g<hr><span style="color:red">This product is gluten-free and suitable for vegans. Handmade in Thailand.</span></td>
+                    <td class="img-cell"><img src="CoconutMilkDarkChocolate.webp"></td>
+                    <td style="text-align:center;">Retail price:<br><span style="color:red; font-weight:bold;">118 CNY<hr></span><b>*Basic </b>wholesale price:<br><span class="wholesaleprice">81.50 CNY</span><br>(min qty: 24 - any combination)<br><b>*negotiable for large quantities</b><span style="color:red"></span></td>
+                </tr>
+
+                <tr>
+                    <td><span class="prodname">85% Signature Dark Chocolate</span><br>SIAMAYA's 85% Signature Dark Chocolate makes no attempt to conceal its rich flavor with just a touch of sugar, allowing for a fuller experience of SIAMAYA's <b>signature blend</b> of <b>Thai cacao</b>.<hr>Dimensions: 8.5 x 1.2 x 17cm, Weight: 75g<hr><span style="color:red">This product is gluten-free and suitable for vegans. Handmade in Thailand.</span></td>
+                    <td class="img-cell"><img src="Signature85PercentDarkChocolate.webp"></td>
+                    <td style="text-align:center;">Retail price:<br><span style="color:red; font-weight:bold;">118 CNY<hr></span><b>*Basic </b>wholesale price:<br><span class="wholesaleprice">81.50 CNY</span><br>(min qty: 24 - any combination)<br><b>*negotiable for large quantities</b><span style="color:red"></span></td>
+                </tr>
+   
+                <tr>
+                    <td><span class="prodname">70% Signature Dark Chocolate</span><br>Made from SIAMAYA's <b>signature blend</b> of <b>Thai cacao</b> - this bar features a silky smooth texture and robust chocolate flavor accentuated by natural notes of <b>fruit</b> and <b>spices</b>.<br><span style="color:red">Award: <b>AOC Academy of Chocolate 2023 Bronze</b></span><hr>Dimensions: 8.5 x 1.2 x 17cm, Weight: 75g<hr><span style="color:red">This product is gluten-free and suitable for vegans. Handmade in Thailand.</span></td>
+                    <td class="img-cell"><img src="Signature70PercentDarkChocolate.webp"></td>
+                    <td style="text-align:center;">Retail price:<br><span style="color:red; font-weight:bold;">118 CNY<hr></span><b>*Basic </b>wholesale price:<br><span class="wholesaleprice">81.50 CNY</span><br>(min qty: 24 - any combination)<br><b>*negotiable for large quantities</b><span style="color:red"></span></td>
+                </tr> 
+                    
+                <tr>
+                    <td><span class="prodname">Signature Milk Chocolate</span><br>Dark and indulgent, this milk chocolate is made with <b>grass-fed full-cream milk</b> and <b>50% cacao</b>, giving it a rich flavor and velvety texture.<br><span style="color:red">Award: <b>AOC Academy of Chocolate 2023Bronze</b></span><hr>Dimensions: 8.5 x 1.2 x 17cm, Weight: 75g<hr><span style="color:red">This product is gluten-free and suitable for vegetarians. Handmade in Thailand.</span></td>
+                    <td class="img-cell"><img src="SignatureMilkChocolate.webp"></td>
+                    <td style="text-align:center;">Retail price:<br><span style="color:red; font-weight:bold;">118 CNY<hr></span><b>*Basic </b>wholesale price:<br><span class="wholesaleprice">81.50 CNY</span><br>(min qty: 24 - any combination)<br><b>*negotiable for large quantities</b><span style="color:red"></span></td>
+                </tr>
+
+                <!-- Limited Editions -->
+                <tr>
+                    <td><span class="prodname">Banana Split</span><br>A milk chocolate bar packed with <b>real banana</b> chunks, freeze-dried <b>strawberries</b> and crushed <b>peanuts</b>. Every bite is a delicious "banana sundae", delivering the ultimate taste experience.<hr>Dimensions: 8.5 x 1.2 x 17cm, Weight: 75g<hr><span style="color:red">This product is gluten-free and suitable for vegetarians. Handmade in Thailand.</span></td>
+                    <td class="img-cell"><img src="BananaSplit.png"></td>
+                    <td style="text-align:center;">Retail price:<br><span style="color:red; font-weight:bold;">118 CNY<hr></span><b>*Basic </b>wholesale price:<br><span class="wholesaleprice">81.50 CNY</span><br>(min qty: 24 - any combination)<br><b>*negotiable for large quantities</b><span style="color:red"></span></td>
+                </tr>
+
+                <tr>
+                    <td><span class="prodname">Mango Jelly Popping Candy</span><br>SIAMAYA's ingenious combination of its smooth, rich <b>Signature Milk Chocolate</b> with sweet, chewy <b>mango jelly</b> is only made even better by the vibrant burst of <b>popping candy</b>.<hr>Dimensions: 8.5 x 1.2 x 17cm, Weight: 75g<hr><span style="color:red">This product is gluten-free and suitable for vegetarians. Handmade in Thailand.</span></td>
+                    <td class="img-cell"><img src="MangoJellyPoppingCandy.png"></td>
+                    <td style="text-align:center;">Retail price:<br><span style="color:red; font-weight:bold;">118 CNY<hr></span><b>*Basic </b>wholesale price:<br><span class="wholesaleprice">81.50 CNY</span><br>(min qty: 24 - any combination)<br><b>*negotiable for large quantities</b><span style="color:red"></span></td>
+                </tr>
+                    
+                <tr>
+                    <td><span class="prodname">German Chocolate Cake 70% Dark Chocolate</span><br>This 70% dark chocolate is inspired by traditional German chocolate cake, with the strong flavor of cocoa infused into the warm sweetness of <b>toffee</b> and the gentle aftertaste of <b>toasted coconut</b>. As it melts in your mouth, the nutty aroma of crunchy <b>pecans</b> subtly emerges, achieving a perfect balance of bitter and sweet.<hr>Dimensions: 8.5 x 1.2 x 17cm, Weight: 75g<hr><span style="color:red">This product is gluten-free and suitable for vegetarians. Handmade in Thailand.</span></td>
+                    <td class="img-cell"><img src="GermanChocolateCake.png"></td>
+                    <td style="text-align:center;">Retail price:<br><span style="color:red; font-weight:bold;">118 CNY<hr></span><b>*Basic </b>wholesale price:<br><span class="wholesaleprice">81.50 CNY</span><br>(min qty: 24 - any combination)<br><b>*negotiable for large quantities</b><span style="color:red"></span></td>
+                </tr>
+
+                <tr>
+                    <td><span class="prodname">Smoky S'mores Marshmallow Cookie Milk Chocolate</span><br>Inspired by DINKY's Texas BBG in Chiang Mai, Thailand - this milk chocolate bar is made with selected <b>smoked cacao</b> bits and filled with <b>marshmallows</b> and <b>wholewheat biscuits</b>. Every bite will remind you of roasting mashmallows by a campfire.<hr>Dimensions: 8.5 x 1.2 x 17cm, Weight: 75g<hr><span style="color:red">This product is soy-free. Handmade in Thailand.</span></td>
+                    <td class="img-cell"><img src="SmokySmoresHalloween.webp"></td>
+                    <td>Sold out</td>
+                </tr>
+
+                <tr>
+                    <td><span class="prodname">Mooncake Milk Chocolate</span><br>Celebrate the Chinese Mid-Autumn Festival with SIAMAYA's Mooncake Milk Chocolate! This recipe contains <b>salted egg yolk</b> and <b>lotus seeds</b>. Each bite will remind you of the joy of family reunions and the tradition of sharing mooncakes. The addition of <b>sunflower seeds</b> adds an extra touch of fun.<hr>Dimensions: 8.5 x 1.2 x 17cm, Weight: 75g<hr><span style="color:red">This product is gluten-free and suitable for vegetarians. Handmade in Thailand.</span></td>
+                    <td class="img-cell"><img src="Mooncake.png"></td>
+                    <td>Sold out</td>
+                </tr>
+
+                <!-- Sugar-free -->
+                
+                <tr>
+                    <td><span class="prodname">Sugar-Free "Simply Cacao + Milk 85% Dark Chocolate"</span><br>A rich, full-bodied dark chocolate with a smooth texture. Made with New Zealand <b>grass-fed whole milk</b>, perfectly balancing the <b>rich cocoa</b> aroma and natural sweetness without the addition of sugar or artificial sweeteners. The result is a smooth and satisfying taste - a masterpiece of chocolate-making innovation.<hr>Dimensions: 9.5 x 1.0 x 16.5cm, Weight: 75g<hr><span style="color:red">This product is suitable for vegetarians.</span></td>
+                    <td class="img-cell"><img src="85PercentSimplyCacaoChocolateMilk.png"></td>
+                    <td style="text-align:center;">Retail price:<br><span style="color:red; font-weight:bold;">118 CNY<hr></span><b>*Basic </b>wholesale price:<br><span class="wholesaleprice">81.50 CNY</span><br>(min qty: 24 - any combination)<br><b>*negotiable for large quantities</b><span style="color:red"></span></td>
+                </tr>
+                
+                <tr>
+                    <td><span class="prodname">Sugar-Free "Almond & Sea Salt Cacao + Milk 85% Dark Chocolate"</span><br>A rich and intense dark chocolate that blends <b>rich cocoa</b>, smooth New Zealand <b>grass-fed whole milk</b>, <b>crunchy roasted almonds</b>, and a touch of <b>sea salt</b>. The milk imparts a natural sweetness and smooth texture to the chocolate, perfectly balancing its intense flavor. The almonds provide a satisfying crunch and nutty aroma and the sea salt further enhances the overall flavor.<hr>Dimensions: 9.5 x 1.0 x 16.5cm, Weight: 75g<hr><span style="color:red">This product is suitable for vegetarians.</span></td></span></td>
+                    <td class="img-cell"><img src="85PercentSimplyCacaoChocolateMilkAlmondsAndSeaSalt.png"></td>
+                    <td style="text-align:center;">Retail price:<br><span style="color:red; font-weight:bold;">118 CNY<hr></span><b>*Basic </b>wholesale price:<br><span class="wholesaleprice">81.50 CNY</span><br>(min qty: 24 - any combination)<br><b>*negotiable for large quantities</b><span style="color:red"></span></td>
+                </tr>                
+
+                <tr>
+                    <td><span class="prodname">Sugar-Free "Vanilla Bean Cacao + Milk 85% Dark Chocolate"</span><br>A delicate blend of rich dark chocolate, smooth New Zealand <b>grass-fed whole milk</b>, and real <b>vanilla beans</b>, crafted for those who appreciate refined flavor and exceptional quality. The vanilla beans offer a subtle fragrance to the natural sweetness of the milk and smooth texture.<hr>Dimensions: 9.5 x 1.0 x 16.5cm, Weight: 75g<hr><span style="color:red">This product is suitable for vegetarians.</span></td>
+                    <td class="img-cell"><img src="85PercentSimplyCacaoChocolateMilkAndVanilla.png"></td>
+                    <td style="text-align:center;">Retail price:<br><span style="color:red; font-weight:bold;">118 CNY<hr></span><b>*Basic </b>wholesale price:<br><span class="wholesaleprice">81.50 CNY</span><br>(min qty: 24 - any combination)<br><b>*negotiable for large quantities</b><span style="color:red"></span></td>
+                </tr>
+
+                <!-- Chocolate Powder Products -->
+                <tr>
+                    <td><span class="prodname">Cacao Nibs</span><br>The finest <b>cacao nibs</b> from Chiang Mai, Thailand.<hr>Dimensions: 13.0 x 7.0 x 19.0cm, Weight: 250g<hr><span style="color:red">This product is gluten-free and suitable for vegans.</span></td>
+                    <td class="img-cell"><img src="CacaoNibs.png"></td>
+                    <td>Sold out</td>
+                </tr>
+                <tr>
+                    <td><span class="prodname">Cacao Powder</span><br>Experience the rich flavor of <b>cacao powder</b> - a natural and nutritious ingredient you can use for recipes while priorititizing your health.<hr>Dimensions: 13.0 x 7.0 x 19.0cm, Weight: 250g<hr><span style="color:red">This product is gluten-free and suitable for vegans.</span></td>
+                    <td class="img-cell"><img src="CocoaPowder.png"></td> 
+                    <td>Sold out</td>
+                </tr>
+                <tr>
+                    <td><span class="prodname">Drinking Chocolate Mix</span><br>SIMAMAYA's hot chocolate mix perfectly blends different <b>local Thai cocoa beans</b>, infused with <b>organic sugar</b> and a touch of <b>salt</b>, bringing chocolate lovers a rich, flavorful, slightly sweet, and smooth chocolate drink. Simply add either whole milk or plant-based milk to create the perfect hot chocolate drink - delicious as either a hot or a cold beverage!<hr>Dimensions: 13.0 x 7.0 x 19.0cm, Weight: 250g<hr><span style="color:red">This product is gluten-free and suitable for vegans.</span></td>
+                    <td class="img-cell"><img src="DrinkingChocolateMix.png"></td> 
+                    <td>Sold out</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <footer>
+            <div style="max-width:1200px;margin:0 auto;">
+                <h3>Contact</h3>
+                <div class="contact-details">
+                    <div><p>Email: <b>ying@SIAMAYAchocolate.com</b></p></div><br>
+                    <div><p>Phone: <b>(+86)158 023 40874</b></p></div><br>
+                    <div><p>Wechat: <b>SIAMAYA01</b></p></div><br>
+                    <div><p>Rednote: <b>26154135877</b></p></div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    </body>
+</html>
+</body>
+</html>
