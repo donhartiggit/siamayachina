@@ -22,34 +22,20 @@
         }
 
         /* Header Styles */
-        .headerimage {
-            min-width:95%;
-            max-width:100%; 
-            height:auto;
-        }
-        
-        header {
-            height: 647px;
-            background-size: cover;
-            background-position: center;
-            display:flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            text-align: center;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
-        }
-
-        header h1 {
-            font-size: 2.5rem;
-        } 
-
-        .buttoncontainer {
-            margin-top: 10px;
+        .header {
+            background-color:red;
+            padding: 10px 20px;             
             text-align:center;
         }
-        button {
-            margin: 0px 1px;
+
+        .logo {
+            height:60px;
+            width:auto;
+            margin-bottom:10px;
+        }
+
+        button { 
+            margin: 0px 0px 10px 0px;
             text-align:center;
             height:50px; 
             width:100px; 
@@ -59,6 +45,13 @@
             border:none;
             font-weight:bold; 
             border-radius:10px;
+        }     
+        
+        #namecard {
+            margin-top:0px;
+            width:100%;
+            height:auto;
+            box-shadow: -5px 5px 10px black;            
         }
   
         /* Container for multiple product cards */
@@ -212,15 +205,20 @@
 
 <body>
     <!-- Header -->
-   
+     <div class="header">
+    <img class="logo"  src="rectLogo.png">
             <div class="buttoncontainer"> 
                 <button><a href="https://siamayachina.com">主页</a></button>
                 <button><a href="https://siamayachina.com#catalogueHeading">批发</a></button>
-            </div>
+    </div>
 
-        <div><img class="headerimage" src="JYC.webp">
+        <div><img id="namecard" src="JYC.webp">
             <!--<h1 style="color:red; font-size:30px">我们在2025年 Salon Du Chocolat 上海国际巧克力展等您来！</h1>
         <div><img class="headerimage" src="SalonDuChocolatExpo.png"></center>-->
+        </header>
+
+
+
 
     <!-- Product Grid -->
     <section class="product-grid">
